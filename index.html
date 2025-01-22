@@ -17,16 +17,16 @@
                 <a href=""><h2 class="logoText">Edifice</h2></a>
             </div>
             <div class="menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Photos</a></li>
+                <ul class="navbar">
+                    <li><a href="" class="home">Home</a></li>
+                    <li><a href="" class="photos">Photos</a></li>
                     <li><a href="">Blogs</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">Merch</a></li>
-                    <li><a href="">Email Newsletter</a></li>
+                    <li><a href="" class="newsletter">Email Newsletter</a></li>
                 </ul>
             </div>
-            <!-- <div class="toggle"></div> -->
+            <div class="toggle"></div>
         </header>
     
 
@@ -76,12 +76,14 @@
     <script>
         // document.querySelector('video').defaultPlaybackRate = 3.0;
         // document.querySelector('video').play()
-        const showcase = document.querySelector('.showcase');
+        const menu = document.querySelector('.menu');
+        const navbar = document.querySelector('ul');
         const menuToggle= document.querySelector('.toggle');
 
         menuToggle.addEventListener('click', function() {
             menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
+            menu.classList.toggle('active')
+            navbar.classList.toggle('active')
         })
 
     </script>
