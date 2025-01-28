@@ -16,6 +16,10 @@
     
 }
 
+body {
+    background-color: #001220;
+}
+
 .ask-cookies{
     /* position: absolute; */
     position:fixed;
@@ -357,8 +361,8 @@ header .logoImg{
 
 .project-carousel{
     width: 100%;
-    padding: 10em 0; 
-    background-image: url("../images/blob1.svg");
+    padding: 3em 0; 
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../images/circle-scatter.svg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -467,6 +471,86 @@ header .logoImg{
 .carousel button{
     height: 100%;
 }
+
+.funfacts {
+    width: 100%;
+    padding: 10em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/layered-waves.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.funfacts .funfact-header h1{
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 600;
+    color: #fff;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.funfacts .funfact-header h1:hover{
+    letter-spacing: 15px;
+}
+
+.funfacts .facts{
+    width: 70em; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.funfacts .facts .fact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://img.freepik.com/free-vector/hand-drawn-doodle-movie-cinema-set_88138-1050.jpg?t=st=1738037247~exp=1738040847~hmac=ff0939a11fe4cc365dc8649f9b983b7679485fe7b79c698f3ee00f16aec7818e&w=1380");
+    border-radius: 4em;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.funfacts .facts .fact.fact2 {
+    flex-direction: row-reverse;
+}
+
+.funfacts .facts img{
+    width: 30%;
+    border-radius: 4em;
+}
+
+.facts .fact .info {
+    margin: 0 20px;
+    height: 100%;
+}
+
+.funfacts .fact h2 {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+
+}
+
+.funfacts .fact p {
+    color: #f0f0f0;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+}
+
 
 
 @media (max-width: 798px) {
