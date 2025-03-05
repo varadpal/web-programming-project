@@ -34,3 +34,17 @@ menuToggle.addEventListener('click', function() {
     menu.classList.toggle('active');
     navbar.classList.toggle('active');
 })
+
+
+
+/**************************************************
+    CODE FOR GALLERY WEBPAGE
+ **************************************************/
+
+let selectedImg = document.querySelector(".mainImg");
+let selectedTitle = document.getElementsByClassName(".titles");
+console.log("Hello  World");
+
+selectedTitle.addEventListener('click', function() {
+    console.log(selectedTitle.getAttribute("val"));
+})

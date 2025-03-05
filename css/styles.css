@@ -319,11 +319,103 @@ header .logoImg{
     border-radius: 6px;
 }
 
+.ourGallery {
+    display: flex;
+    cursor: pointer;
+}
+
+/* .galleryHeader {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-weight: 600;
+    cursor: default;
+    transition: 1s;
+    
+    } */
+    
+.ourGallery button {
+    position: absolute;
+    top: 170vh; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 15em;
+    height: 60px;
+    border: none;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    background-color: #000;
+    transition: 1s;
+}
+
+.ourGallery button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ourGallery button:hover {
+    width: 20em;
+    letter-spacing: 10px;
+    color: #000;
+    background-color: #e63946;
+}
+
+/* .ourGallery img {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 25%;
+    object-fit: cover;
+    filter:brightness(0.7);
+    transition: 1s;
+    }
+    
+    
+.ourGallery img:hover{
+    filter:brightness(1);
+        
+} */
+        
+.small {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 80vh;
+    float: left;
+    position:relative;
+    overflow: hidden;
+}
+        
+.small img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+    filter:brightness(0.6);
+    transition: 1.5s ease;
+}
+  
+.small:hover img{
+    transform: scale(1.2);
+    filter:brightness(1);
+
+}
+
 .ourBlogs{
-    padding: 10em 0;
+    padding: 2em 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/1155.jpg);
 }
@@ -343,12 +435,12 @@ header .logoImg{
     background: linear-gradient(to right, #97ccd5, #f3dfa2, #fff ); 
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text;  
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: 7px;
     font-weight: 600;
     cursor:default;
     transition: 1s;
-    text-underline-offset: ;
+    /* text-underline-offset:inherit ; */
     /* text-decoration: 2px solid #111; */
 }
 
@@ -372,8 +464,8 @@ header .logoImg{
     background-color: #252525;
     color: #fff;
     margin-right: 40px;
-    width: 300px;
-    height: 400px;
+    width: 4git00px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,7 +493,9 @@ header .logoImg{
 }
 
 .blogsList .card p{
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0px 10px;
 }
 
 @keyframes appear {
@@ -419,7 +513,7 @@ header .logoImg{
 
 .project-carousel{
     width: 100%;
-    padding: 3em 0; 
+    padding: 2em 0; 
     background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../images/circle-scatter.svg);
     background-size: cover;
     display: flex;
@@ -456,7 +550,7 @@ header .logoImg{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
 }
 
 .carousel-header img{
@@ -471,7 +565,7 @@ header .logoImg{
 }
 
 .carousel-header h1{
-    font-size: 48px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 7px;
     font-weight: 600;
@@ -512,12 +606,17 @@ header .logoImg{
 }
 
 .carousel-caption h2{
+    font-size: 28px;
     color: #FBAE3C;
+    width: 50%;
+    text-align: right;
 }
 
 .carousel-caption p {
     text-align: right;
-    width: 50%;
+    width: 60%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .carousel-item img{
@@ -535,9 +634,10 @@ header .logoImg{
     padding: 5em 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/layered-waves.svg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/layered-waves.svg); */
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -548,10 +648,9 @@ header .logoImg{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
-    background-color: #001220;
+    /* background-color: #001220;
     border-radius: 5em;
-    padding: 0 40px;
+    padding: 0 40px; */
 }
 
 .funfact-header img{
@@ -561,43 +660,46 @@ header .logoImg{
 }
 
 .funfacts .funfact-header h1{
-    font-size: 48px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 9px;
     font-weight: 600;
-    color: #fff;
+    color: #FBAE3C;
     cursor: default;
     transition: 1s;
 }
 
 .funfacts .funfact-header h1:hover{
     letter-spacing: 18px;
+    color: #e63946;
 }
 
 .funfacts .facts{
-    width: 110vh; 
+    width: 90%; 
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: #ced4da;
     border-radius: 3em;
-
+    /* background-color: #181818; */
+    
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry -100em;
-
+    
 }
 
 .funfacts .facts .fact {
+    /* width: 110vh;  */
+    /* height: 30em; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items:center;
     margin-bottom: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("https://img.freepik.com/free-vector/hand-drawn-doodle-movie-cinema-set_88138-1050.jpg?t=st=1738037247~exp=1738040847~hmac=ff0939a11fe4cc365dc8649f9b983b7679485fe7b79c698f3ee00f16aec7818e&w=1380");
-    border-radius: 4em;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("https://img.freepik.com/free-vector/hand-drawn-doodle-movie-cinema-set_88138-1050.jpg?t=st=1738037247~exp=1738040847~hmac=ff0939a11fe4cc365dc8649f9b983b7679485fe7b79c698f3ee00f16aec7818e&w=1380");
+    border-radius: 50px;
 
     animation: appear linear;
     animation-timeline: view();
@@ -611,24 +713,25 @@ header .logoImg{
 }
 
 .funfacts .facts img{
-    width: 30%;
-    border-radius: 4em;
+    width: 20em;
+    border-radius: 1em;
     transition: 0.5s;
 }
 
-.funfacts .facts .fact img:hover{
+/* .funfacts .facts .fact img:hover{
     transform: scale(1.1);
-}
+} */
 
 .facts .fact .info {
     margin: 0 20px;
     height: 100%;
+    width: 60%;
     transition: 0.3s;
 }
 
-.funfacts .facts .fact .info:hover{
+/* .funfacts .facts .fact .info:hover{
     transform: scale(1.025);
-}
+} */
 
 .funfacts .fact h2 {
     width: 100%;
@@ -645,7 +748,83 @@ header .logoImg{
     font-size: 18px;
 }
 
-
+footer{
+    padding: 4em 0px 1em 0px;
+    background-color: #5a3b0c;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+}
+    
+.conclusion {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+    
+.conclusion .brand{
+    }
+    
+.conclusion .brand .title{
+    /* font-family: "Borel", serif;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+    height: 40px; */
+    height: 60px;
+}
+    
+.brand .punchline {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+    
+.brand .social {
+    display: flex;
+    justify-content: space-around; 
+}
+    
+.brand .social a img{
+    margin-top: 20px;
+    transform: scale(0.8);
+    filter: invert(1);
+    transition: 0.5s;
+}
+    
+.brand .social a img:hover{
+    color: #1d3557;
+    transform: scale(1) translateY(-10px);
+}
+    
+.conclusion .links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+    
+.conclusion .links a:hover{
+    color: #e63946;
+    transform: scale(1.1);
+}
+    
+footer hr{
+    border: 1px solid #9d9fe9;
+}
+    
+footer h4{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+    
 
 @media (max-width: 798px) {
     .showcase{
@@ -728,9 +907,9 @@ header .logoImg{
     }
 
     /* .menu .navbar.active a{
+        }
         background-color: #e63946;
         padding-bottom: 100px;
         font-size: 8px;
-    }
     */
 }
