@@ -4,7 +4,7 @@ const loaderMain = document.querySelector(".loader-main")
 let loadingText = document.querySelector(".loader-num");
 
 loaderMain.addEventListener("animationend", () => {
-    let interval = 1500; 
+    let interval = 1000; 
 
     let startValue = 0;
     let endValue = parseInt(loadingText.getAttribute("end-val"));
@@ -35,16 +35,18 @@ menuToggle.addEventListener('click', function() {
     navbar.classList.toggle('active');
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("audioPlayed")) {
+      // Wait for user interaction
+      document.body.addEventListener("click", function playAudioOnce() {
+        let audio = document.getElementById("introAudio");
+        audio.play().catch(error => console.log("Autoplay blocked:", error));
+        
+        // Mark as played
+        localStorage.setItem("audioPlayed", "true");
 
-
-/**************************************************
-    CODE FOR GALLERY WEBPAGE
- **************************************************/
-
-let selectedImg = document.querySelector(".mainImg");
-let selectedTitle = document.getElementsByClassName(".titles");
-console.log("Hello  World");
-
-selectedTitle.addEventListener('click', function() {
-    console.log(selectedTitle.getAttribute("val"));
-})
+        // Remove event listener to prevent multiple plays
+        document.body.removeEventListener("click", playAudioOnce);
+      });
+    }
+  });

@@ -95,12 +95,14 @@ navbar .menu .navItems a:hover {
 .showcase .overlay {
     position: absolute;
     top: 0px;
-    right: 75%;
+    right: 80%;
     width: 100%;
     height: 100%;
     z-index: 9;
     background-color: #313131;
     mix-blend-mode:hard-light;
+    border-top-right-radius: 25em;
+    border-bottom-right-radius: 25em;
 }
 
 .showcase .titles {
@@ -131,7 +133,26 @@ navbar .menu .navItems a:hover {
 }
 
 .showcase .titles .title.clicked a{
+    color: #e63946;
+}
+
+.showcase .titles .title:hover{ 
+    transform: scale(1.1) translateX(20px);
+}
+
+.showcase .titles .title a:hover {
     color: #afafaf;
+    /* font-size: 55px; */
+}
+
+.showcase .titles .title.clicked a:hover {
+    transform: scale(1.1) translateX(20px);
+    color: #e42131;   
+}
+
+.showcase .titles .title.clicked:hover {
+    transform: scale(1.3) translateX(30px);
+
 }
 
 .gallery {
@@ -190,16 +211,20 @@ navbar .menu .navItems a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-bottom: 20px;
+    background-color: #212529;
 }
 
 .gallery .photos .picHeading {
-    font-family: "Charm", cursive;
-    font-weight: 700;
+    font-family: "Rubik Glitch Pop", system-ui;
+    font-weight: 500;
     font-style: normal;
 
     text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 12px;
+    color: #fff;
+    font-size: 55px;
+    letter-spacing: 20px;
+    
 }
 
 .gallery .photos .pictures {
@@ -238,6 +263,10 @@ navbar .menu .navItems a:hover {
     body{
         display: "none";
     }
+}
+
+.gallery .photos .pictures img.hidden {
+    display: none;
 }
 
 footer{
