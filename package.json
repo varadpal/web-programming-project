@@ -4,8 +4,7 @@
   "description": "��#\u0000 \u0000w\u0000e\u0000b\u0000-\u0000p\u0000r\u0000o\u0000g\u0000r\u0000a\u0000m\u0000m\u0000i\u0000n\u0000g\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000",
   "main": "gallery.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "api/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -30,7 +29,6 @@
     "nodemon": "^3.1.9",
     "path": "^0.12.7",
     "puppeteer": "^24.6.0",
-    "serverless-http": "^3.2.0",
-    "vercel": "^41.0.2"
+    "serverless-http": "^3.2.0"
   }
 }
