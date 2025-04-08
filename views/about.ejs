@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/navbarFooter.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <!-- Reuse your navbar here -->
+    <%- include('partials/navbar.ejs') %>
+
+    <main class="about-container">
+        <img src="https://example.com/film-reel.png" class="film-reel reel-left" alt="Film reel decoration">
+        <img src="https://example.com/film-reel.png" class="film-reel reel-right" alt="Film reel decoration">
+
+        <div class="cine-section">
+            <h2 class="directors-cut">Behind The Scenes</h2>
+
+            <h3 class="scene-heading">Our Production Studio</h3>
+            <p class="about-text">
+                At <strong>CineWeb</strong>, we don’t just build websites — we direct digital masterpieces. Each experience is crafted with the same care and creativity as a film production. From script to screen (aka concept to code), our workflow mirrors the cinematic process: <br><br>
+                <strong>Pre-production (creative strategy),</strong><br>
+                <strong>Production (agile design & development),</strong><br>
+                <strong>and Post-production (final polish & optimization).</strong>
+
+            </p>
+
+            <div class="film-reel-grid">
+                <div class="film-cell">
+                    <h3>🎬 Cinematic UX</h3>
+                    <p>Story-first design that guides users through every scene with seamless transitions and emotional beats.</p>
+                </div>
+                <div class="film-cell">
+                    <h3>📽 4K Resolution</h3>
+                    <p>Built pixel-perfect for high-DPI screens, our visuals are sharp, crisp, and theatrical.</p>
+                </div>
+                <div class="film-cell">
+                    <h3>🎥 Continuous Take</h3>
+                    <p>No cuts. No jank. Just smooth, uninterrupted navigation. </p>
+                </div>
+            </div>
+
+            <h3 class="scene-heading">Technical Credits</h3>
+            <div class="credits-roll">
+                <div class="credit-item">
+                    <i class="fas fa-code"></i>
+                    <h4>100+</h4>
+                    <p>Scenes Coded</p>
+                </div>
+                <div class="credit-item">
+                    <i class="fas fa-film"></i>
+                    <h4>60 FPS</h4>
+                    <p>Animation Target</p>
+                </div>
+                <div class="credit-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>24/7</h4>
+                    <p>Creative Studio</p>
+                </div>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=izDChx0zcPM">
+                <button class="theater-button">
+                    <i class="fas fa-play" style="margin-right: 0.8rem;"></i>
+                    Play Showreel
+                </button>
+            </a>
+
+            <h3 class="scene-heading">The Creative Team</h3>
+            <div class="founders-grid">
+                <!-- Founder 1 -->
+                <div class="founder-card">
+                    <img src="/images/people/Himanshu.jpg" class="founder-img" alt="Alex Chen">
+                    <h3 class="founder-name">Himanshu Sinner</h3>
+                    <p class="founder-role">Creative Strategist & Visual Curator</p>
+                    <p class="founder-bio">
+                        Himanshu’s eye for detail brought soul to Cineweb. Whether it was picking that perfect Ghibli still or making 
+                        sure every font choice matched the mood, he gave the site its aesthetic vibe.
+                    </p>
+                </div>
+
+                <!-- Founder 2 -->
+                <div class="founder-card">
+                    <img src="/images/people/Varad.jpg" class="founder-img" alt="Maya Rodriguez">
+                    <h3 class="founder-name">Varad Pal</h3>
+                    <p class="founder-role">Lead Developer & Full-Stack Engineer</p>
+                    <p class="founder-bio">
+                        The engine behind Edifice, Varad wrote every line of code that powers the platform. From dynamic transitions to 
+                        smooth routing and responsive components, he built the site from scratch — pixel to pixel, div to div.
+                    </p>
+                </div>
+
+                <!-- Founder 3 -->
+                <div class="founder-card">
+                    <img src="/images/people/Soumya.jpg" class="founder-img" alt="Jordan Smith">
+                    <h3 class="founder-name">Soumya Jain</h3>
+                    <p class="founder-role">Content Architect</p>
+                    <p class="founder-bio">
+                        The voice of Cineweb, Soumya crafts the stories behind every pixel. With a deep passion for film and language, she 
+                        shaped the entire content structure — from witty captions to immersive descriptions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Reuse your footer here -->
+    <%- include('partials/footer.ejs') %>
+
+    <script src="/navbar.js"></script>
+</body>
+</html>

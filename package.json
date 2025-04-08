@@ -1,0 +1,33 @@
+{
+  "name": "web-programming-project",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000w\u0000e\u0000b\u0000-\u0000p\u0000r\u0000o\u0000g\u0000r\u0000a\u0000m\u0000m\u0000i\u0000n\u0000g\u0000-\u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000",
+  "main": "gallery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varadpal/web-programming-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varadpal/web-programming-project/issues"
+  },
+  "homepage": "https://github.com/varadpal/web-programming-project#readme",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "imdb-api": "^4.4.1",
+    "imdb-scrapper": "^2.3.1",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "puppeteer": "^24.6.0"
+  }
+}

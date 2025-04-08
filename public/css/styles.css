@@ -130,7 +130,6 @@ body {
 
 header .logoImg{
     height: 50px;
-
     border-radius: 8px;
 }
 
@@ -193,6 +192,7 @@ header .logoImg{
 .landingText {
     position: relative;
     z-index: 10;
+    left: -20em;
 
     animation: fade-out linear;
     animation-timeline: view();
@@ -459,6 +459,12 @@ header .logoImg{
     animation-range: entry 0;
 }
 
+.blogsList .blog-link {
+    text-decoration: none;
+    width: 350px;
+    margin-right: 20px;
+}
+
 .blogsList .card {
     background-color: #252525;
     color: #fff;
@@ -474,7 +480,7 @@ header .logoImg{
 }
 
 .blogsList .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .blogsList .cardImg {

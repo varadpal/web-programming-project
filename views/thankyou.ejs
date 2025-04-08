@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/thankyou.css" />
+    <link rel="stylesheet" href="/css/navbarFooter.css">
+  </head>
+  <body>
+    <%- include("partials/navbar.ejs") %>
+    
+    <div class="container1">
+        <div class="thank-you-container">
+            <h1>Thank You!</h1>
+            <p>
+                Your registration was successfully submitted.<br />We’ll be in touch
+                with you shortly.
+            </p>
+            <a href="/">Go Back to Home</a>
+        </div>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

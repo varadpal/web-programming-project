@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/css/navbarFooter.css" />
+    <link rel="stylesheet" href="/css/newsletterReg.css" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  </head>
+  <body>
+    <%- include('partials/navbar.ejs') %>
+
+    <section class="registration-container">
+      <div class="form-header">
+        <h2>Join Our Newsletter</h2>
+        <p>Stay updated with our latest news</p>
+      </div>
+
+      <div class="main-content">
+        <form class="registration-form" action="/newsletter" method="POST">
+          <div class="input-group">
+            <div class="input-box">
+              <label for="firstName"><i class="fas fa-user"></i></label>
+              <input
+                type="text"
+                id="firstName"
+                name="fname"
+                placeholder="First Name"
+                required
+                />
+              </div>
+              <div class="input-box">
+                <label for="lastName"><i class="fas fa-user"></i></label>
+                <input
+                type="text"
+                id="lastName"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-box full-width">
+            <label for="email"><i class="fas fa-envelope"></i></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="input-box full-width">
+            <label for="phone"><i class="fas fa-phone right-icon"></i></label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number"/>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Register Now <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="reach-us-card">
+          <h3>Reach Us At:</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 
+            1 Sheikh Mohammed bin Rashid Blvd - <br>
+            Downtown Dubai - Dubai - United Arab Emirates
+          </p>
+          <p><i class="fas fa-envelope"></i> underdeskcoder@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +91 9755-80-6969</p>
+
+          <h4>Follow Us:</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div class="map-container">
+          <!-- Burj Khalifa Map with Pin -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.334515554413!2d55.27218721449756!3d25.197197483897708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433f9dfc6d13%3A0xb5a7c8f49f15b1f3!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1712563349348!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0; border-radius: 12px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+
+    <script>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // ← this will stop the form from submitting!
+        // make a fetch instead?
+      });
+    </script>
+  </body>
+</html>

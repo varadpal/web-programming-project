@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glimpse</title>
+
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="/css/navbarFooter.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&family=Sora:wght@100..800&family=Staatliches&display=swap" rel="stylesheet">
+     
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
+    <!-- Java Script -->
+    
+</head>
+<body>
+    <%- include('partials/navbar.ejs') %>
+
+    <section class="showcase">
+        <img src="/images/gallery/gallery1.jpg" class="mainImg highlight" alt="">
+        <img src="/images/gallery/gallery2.jpg" class="mainImg" alt="">
+        <img src="/images/gallery/solace6.jpg" class="mainImg" alt="">
+        <img src="/images/gallery/solace1.jpg" class="mainImg" alt="">
+        <img src="/images/gallery/solace4.jpg" class="mainImg" alt="">
+        
+        <ul class="titles">
+            <li class="title 1 clicked" val="1"><a href="">The Cityscape</a></li>
+            <li class="title 2" val="2"><a href="">The Pet</a></li>
+            <li class="title 3" val="3"><a href="">The Work</a></li>
+            <li class="title 4" val="4"><a href="">The Solace</a></li>
+            <li class="title 5" val="5"><a href="">Deep Waters</a></li>
+        </ul>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="gallery">
+        <div class="category">
+            <h2>Categories</h2>
+            <div class="catOptions">
+                <a href="" class="cat" value="memories"><h3>Memories</h3></a>
+                <a href="" class="cat" value="cinema"><h3>Cinema</h3></a>
+                <a href="" class="cat" value="art"><h3>Art</h3></a>
+                <a href="" class="cat" value="stories"><h3>Stories</h3></a>
+            </div>
+        </div>
+
+        <div class="photos">
+            <h1 class="picHeading">All Photos</h1>
+
+            <div class="pictures">
+                <img src="/images/gallery/gallery1.jpg" class="pic 1"alt="">
+                <img src="/images/gallery/gallery2.jpg" class="pic 2"alt="">
+                <img src="/images/gallery/gallery4.jpg" class="pic 3"alt="">
+                <img src="/images/gallery/gallery5.jpg" class="pic 4"alt="">
+                <img src="/images/gallery/gallery3.jpg" class="pic 5"alt="">
+                <img src="/images/gallery/solace1.jpg" class="pic 6"alt="">
+                <img src="/images/gallery/solace2.jpg" class="pic 7"alt="">
+                <img src="/images/gallery/solace3.jpg" class="pic 8"alt="">
+                <img src="/images/gallery/solace4.jpg" class="pic 9"alt="">
+                <img src="/images/gallery/solace5.jpg" class="pic 10"alt="">
+                <img src="/images/gallery/solace6.jpg" class="pic 11"alt="">
+                <img src="/images/gallery/solace7.jpg" class="pic 12"alt="">
+                <img src="/images/gallery/solace8.jpg" class="pic 13"alt="">
+                <img src="/images/gallery/solace9.jpg" class="pic 14"alt="">
+                <img src="/images/gallery/solace10.jpg" class="pic 15"alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+    <script src="/gallery.js"></script>
+    <script src="/navbar.js"></script>
+</body>
+</html>
