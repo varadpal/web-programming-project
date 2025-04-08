@@ -137,6 +137,11 @@ app.get("/about", (req, res) => {
     res.render("about.ejs");
 })
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// TRADITIONAL LISTNER
+// app.listen(PORT, () => {
+//     console.log(`Server is running on http://localhost:${PORT}`);
+// });
+
+// Export it as a Vercel handler
+const serverless = require("serverless-http");
+module.exports = serverless(app);
