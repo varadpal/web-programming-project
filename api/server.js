@@ -4,6 +4,8 @@ const path = require("path");
 const mysql = require("mysql2");
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 require("dotenv").config();
+const serverless = require("serverless-http");
+
 
 
 const app = express();
@@ -143,5 +145,5 @@ app.get("/about", (req, res) => {
 // });
 
 // Export it as a Vercel handler
-const serverless = require("serverless-http");
-module.exports = serverless(app);
+module.exports = app; 
+module.exports.handler = serverless(app);
