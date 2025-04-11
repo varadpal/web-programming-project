@@ -1,4 +1,4 @@
-﻿# web-programming-project
+﻿# EDIFICE - Cinema Of The World
 
 **Live Website:** [Live On](https://web-programming-project-pbru.onrender.com)<br>
 **LinkedIn:** [Profile](https://www.linkedin.com/in/varadpal/)<br><br>
