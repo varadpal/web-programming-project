@@ -39,9 +39,9 @@ Built with a passion for storytelling and visuals, this platform merges function
 
 ## Preview
 
-| Homepage | Top Picks Section | Blogs |
+| Homepage | Top Picks Page | Email Newsletter |
 |---------|------------------|-------|
-| ![Homepage Screenshot](./screenshots/homepage.png) | ![Top Picks Screenshot](./screenshots/top-picks.png) | ![Blog Section Screenshot](./screenshots/blogs.png) |
+| ![Homepage Screenshot](./screenshots/homepage.png) | ![Top Picks Page Screenshot](./screenshots/topPicks.png) | ![Email Newsletter Mailchimp Screenshot](./screenshots/emailNewsletter.png) |
 
 ---
 
