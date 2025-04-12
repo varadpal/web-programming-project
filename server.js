@@ -22,15 +22,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// FOR LOCAL HOSTING 
-
-// const db = mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "rootroot",
-//     database: "CollegeProject"
-// });
-
 // FOR HOSTING THROUGH RAILWAY_VERCEL
 
 const db = mysql.createConnection({
